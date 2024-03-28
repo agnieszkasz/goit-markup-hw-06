@@ -28,8 +28,13 @@ h3 {
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
-  margin-right: 76px;
+  margin-right: 120px;
   padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 0px;
 }
 .studio {
   color: #2e2f42;
@@ -38,7 +43,7 @@ h3 {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #404bbf;
+  color: #2e2f42;
   position: relative;
 }
 .nav-list:hover,
@@ -46,10 +51,10 @@ h3 {
   color: #404bbf;
 }
 .address {
-  font-style: normal;
-  display: flex;
-  align-items: center;
+  display: none;
+  /* align-items: center;
   justify-content: flex-end;
+  font-style: normal; */
 }
 .address-list {
   line-height: 1.5;
@@ -302,14 +307,15 @@ header div {
 }
 .navigation {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  height: 56px;
 }
 
 nav ul li a {
   padding: 24px 0;
 }
 .menu {
-  display: flex;
+  display: none;
   gap: 40px;
 }
 .list-menu {
@@ -398,6 +404,7 @@ ul.social-icon-list {
 .studio-menu {
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #404bbf;
 }
 .studio-menu::after {
   content: "";
@@ -410,6 +417,61 @@ ul.social-icon-list {
   border-radius: 2px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* .mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.mobile-nav-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.point-studio {
+  color: #404bbf;
+}
+.mobile-close-butt {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 24px;
+  left: 272px;
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-nav {
+  display: flex;
+  align-items: center;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
+}
+.mobile-menu.is-open {
+  visibility: visible;
+} */
 .backdrop {
   position: fixed;
   top: 0;
@@ -666,6 +728,21 @@ ul.social-icon-list {
   margin-left: 16px;
   fill: #ffffff;
 }
+.line {
+  width: 17px;
+  height: 2.5px;
+  background-color: #2f2f37;
+  margin: auto;
+}
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  height: 15px;
+  /* align-items: center;
+  align-content: center; */
+  justify-content: center;
+}
 
 @media (min-resolution: 192dpi) {
   .first {
@@ -740,6 +817,45 @@ ul.social-icon-list {
     flex-direction: row;
     flex-wrap: nowrap;
   }
+  .menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .address {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #434455;
+  }
+  .logo.web {
+    width: 115px;
+  }
+  .add-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #434455;
+    margin: auto;
+  }
+  .navigation {
+    width: 768px;
+    height: 72px;
+  }
+  .hamburger {
+    display: none;
+  }
 }
 @media (min-width: 768px) and (min-resolution: 192dpi) {
   .first {
@@ -793,6 +909,28 @@ ul.social-icon-list {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
+  }
+  .menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .add-list {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    margin: auto;
+  }
+  .hamburger {
+    display: none;
   }
 }
 @media (min-width: 1158px) and (min-resolution: 192dpi) {
