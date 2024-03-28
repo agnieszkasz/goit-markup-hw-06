@@ -122,7 +122,8 @@
           <ul class="third-list">
             <li class="third-section-list">
               <img
-                src="./images/imga.jpg"
+                srcset="./images/mark.jpg 1x, ./images/mark@2x.jpg 2x"
+                src="./images/mark.jpg"
                 alt="Mark Guerrero men with beard"
                 width="264"
               />
@@ -161,7 +162,8 @@
             </li>
             <li class="third-section-list">
               <img
-                src="./images/imgb.jpg"
+                srcset="./images/tom.jpg 1x, ./images/tom@2x.jpg 2x"
+                src="./images/tom.jpg"
                 alt="Tom Ford men with no beard"
                 width="264"
               />
@@ -200,7 +202,8 @@
             </li>
             <li class="third-section-list">
               <img
-                src="./images/imgc.jpg"
+                srcset="./images/camila.jpg 1x, ./images/camila@2x.jpg 2x"
+                src="./images/camila.jpg"
                 alt="Camila Garcia women with long brown hair"
                 width="264"
               />
@@ -239,7 +242,8 @@
             </li>
             <li class="third-section-list">
               <img
-                src="./images/imgd.jpg"
+                srcset="./images/daniel.jpg 1x, ./images/daniel@2x.jpg 2x"
+                src="./images/daniel.jpg"
                 alt="Daniel Wilson men with short beard"
                 width="264"
               />
@@ -285,11 +289,27 @@
           <ul class="fourth-section-list">
             <li class="fourth-section-list-point">
               <div class="image-info">
-                <img
-                  src="./images/img6.jpg"
-                  alt="example of banking app"
-                  width="360"
-                />
+                <picture class="portfolio image">
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobilefr.jpg    1x,
+                      ./images/mobilefr@2x.jpg 2x
+                    " />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/tabletfr.jpg    1x,
+                      ./images/tabletfr@2x.jpg 2x
+                    " />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/desktopfr.jpg    1x,
+                      ./images/desktopfr@2x.jpg 2x
+                    " />
+                  <img src="./images/mobilefr.jpg" alt="example of banking app"
+                /></picture>
                 <p class="image-info-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -303,11 +323,30 @@
             </li>
             <li class="fourth-section-list-point">
               <div class="image-info">
-                <img
-                  src="./images/img1.jpg"
-                  alt="cashless payment"
-                  width="360"
-                />
+                <picture class="portfolio image">
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobilesc.jpg    1x,
+                      ./images/mobilesc@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/tabletsc.jpg    1x,
+                      ./images/tabletsc@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/desktopsc.jpg    1x,
+                      ./images/desktopsc@2x.jpg 2x
+                    "
+                  />
+                  <img src="./images/mobilesc.jpg" alt="cashless payment" />
+                </picture>
                 <p class="image-info-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -321,11 +360,29 @@
             </li>
             <li class="fourth-section-list-point">
               <div class="image-info">
-                <img
-                  src="./images/img2.jpg"
-                  alt="laptop and phone with the same graphics on the displays"
-                  width="360"
-                />
+                <picture class="portfolio image">
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobileth.jpg    1x,
+                      ./images/mobileth@2x.jpg 2x
+                    " />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/tabletth.jpg    1x,
+                      ./images/tabletth@2x.jpg 2x
+                    " />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/desktopth.jpg    1x,
+                      ./images/desktopth@2x.jpg 2x
+                    " />
+                  <img
+                    src="./images/mobileth.jpg"
+                    alt="laptop and phone with the same graphics on the displays"
+                /></picture>
                 <p class="image-info-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -339,11 +396,29 @@
             </li>
             <li class="fourth-section-list-point">
               <div class="image-info">
-                <img
-                  src="./images/img3.jpg"
-                  alt="car interior from the driver's side"
-                  width="360"
-                />
+                <picture class="portfolio image">
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobilefth.jpg    1x,
+                      ./images/mobilefth@2x.jpg 2x
+                    " />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/tabletfth.jpg    1x,
+                      ./images/tabletfth@2x.jpg 2x
+                    " />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/desktopfth.jpg    1x,
+                      ./images/desktopfth@2x.jpg 2x
+                    " />
+                  <img
+                    src="./images/mobilefth.jpg"
+                    alt="car interior from the driver's side"
+                /></picture>
                 <p class="image-info-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -357,11 +432,29 @@
             </li>
             <li class="fourth-section-list-point">
               <div class="image-info">
-                <img
-                  src="./images/img4.jpg"
-                  alt="different types of phone displays"
-                  width="360"
-                />
+                <picture class="portfolio image">
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobilefiv.jpg    1x,
+                      ./images/mobilefiv@2x.jpg 2x
+                    " />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/tabletfiv.jpg    1x,
+                      ./images/tabletfiv@2x.jpg 2x
+                    " />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/desktopfiv.jpg    1x,
+                      ./images/desktopfiv@2x.jpg 2x
+                    " />
+                  <img
+                    src="./images/mobilefiv.jpg"
+                    alt="different types of phone displays"
+                /></picture>
                 <p class="image-info-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -375,11 +468,29 @@
             </li>
             <li class="fourth-section-list-point">
               <div class="image-info">
-                <img
-                  src="./images/img5.jpg"
-                  alt="Smiling woman in an orange sweater and orange glasses"
-                  width="360"
-                />
+                <picture class="portfolio image">
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobilesx.jpg    1x,
+                      ./images/mobilesx@2x.jpg 2x
+                    " />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/tabletsx.jpg    1x,
+                      ./images/tabletsx@2x.jpg 2x
+                    " />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/desktopsx.jpg    1x,
+                      ./images/desktopsx@2x.jpg 2x
+                    " />
+                  <img
+                    src="./images/mobilesx.jpg"
+                    alt="Smiling woman in an orange sweater and orange glasses"
+                /></picture>
                 <p class="image-info-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -396,7 +507,7 @@
       </section>
     </main>
     <footer class="foot">
-      <div class="container">
+      <div class="container footer">
         <div class="logo-paragraf-footer">
           <a href="./index.html" class="logo-foot-web"
             >Web<span class="logo-foot-studio">Studio</span></a

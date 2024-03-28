@@ -63,14 +63,15 @@ h3 {
 }
 
 .first {
-  padding: 188px 0;
-  max-width: 1440px;
+  padding: 72px 0;
+  min-width: 320px;
+  /* min-height: 432px; */
   margin: 0 auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/bg_hero.jpg);
+    url(../images/mobilehero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -81,15 +82,18 @@ section.first div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
+
 .first-heading {
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
+  max-width: 216px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
   letter-spacing: 0.02em;
-  color: #ffffff;
-  max-width: 496px;
   text-align: center;
+  color: #fff;
 }
 .butt {
   display: block;
@@ -127,11 +131,13 @@ section.first div {
 }
 .second-section-list {
   display: flex;
-  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 72px;
+  min-width: 288px;
 }
-.second-section-list-point {
-  width: calc((100% - 72px) / 4);
-}
+
 .section-list-point {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -167,15 +173,20 @@ section.first div {
 }
 .third-list {
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 72px;
   gap: 24px;
   padding: 0;
 }
 .third-section-list {
   background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  text-align: center;
 }
 .worker-name {
   padding: 32px 0;
@@ -189,13 +200,12 @@ section.first div {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  width: 1128px;
-  height: 1000px;
 }
 .fourth-section-list-point {
-  width: calc((100% - 48px) / 3);
+  /* width: calc((100% - 48px) / 3); */
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .fourth-section-list-point:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -262,8 +272,8 @@ footer div {
 }
 img {
   display: block;
+  max-width: 100%;
 }
-
 .heading {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -284,10 +294,11 @@ header div {
 }
 .container {
   display: flex;
-  width: 1158px;
+  /* width: 1158px; */
   margin: 0 auto;
   padding: 0 15px;
   justify-content: space-between;
+  max-width: 320px;
 }
 .navigation {
   display: flex;
@@ -322,14 +333,7 @@ ul.social-icon-list {
   gap: 24px;
 }
 .advantages-icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 112px;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  margin-bottom: 8px;
-  border: 1px solid #8e8f99;
+  display: none;
 }
 .social-icons-list-point {
   width: 40px;
@@ -352,13 +356,11 @@ ul.social-icon-list {
 .social-icons {
   fill: #f4f4fd;
 }
-footer div.container {
+.footer {
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
-}
-.logo-paragraf-footer {
-  margin-right: 120px;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
 }
 .social-media-footer-paragraf {
   font-weight: 500;
@@ -613,7 +615,12 @@ footer div.container {
 }
 .foot-form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 24px;
+}
+.foot-form-container {
+  text-align: center;
 }
 .subscribe-input {
   border: 1px solid #fff;
@@ -658,4 +665,142 @@ footer div.container {
 .send-sign {
   margin-left: 16px;
   fill: #ffffff;
+}
+
+@media (min-resolution: 192dpi) {
+  .first {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mobilehero@2x.jpg);
+  }
+}
+@media (min-width: 768px) {
+  .first {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablethero.jpg);
+    padding: 112px 0;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .first-heading {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+  }
+  .container {
+    max-width: 768px;
+  }
+  .second-section-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+  .second-section-list-point {
+    width: calc((100% - 24px) / 2);
+  }
+  .third-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .fourth-section-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    max-width: 768px;
+    align-items: baseline;
+    justify-content: flex-start;
+  }
+  .foot-form-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 24px;
+  }
+  .foot-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+@media (min-width: 768px) and (min-resolution: 192dpi) {
+  .first {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablethero@2x.jpg);
+  }
+}
+@media (min-width: 1158px) {
+  .first {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/desktophero@2x.jpg);
+    padding: 188px 0;
+    max-width: 1440px;
+  }
+  .advantages-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    border: 1px solid #8e8f99;
+  }
+  .container {
+    max-width: 1158px;
+  }
+  .second-section-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 24px;
+  }
+  .second-section-list-point {
+    width: calc((100% - 24px) / 4);
+  }
+  .third-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 24px;
+  }
+  .fourth-section-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+@media (min-width: 1158px) and (min-resolution: 192dpi) {
+  .first {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/desktophero@2x.jpg);
+  }
 }
