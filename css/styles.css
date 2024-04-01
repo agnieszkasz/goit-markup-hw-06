@@ -71,7 +71,7 @@ h3 {
 
 .first {
   padding: 96px 0;
-  min-width: 320px;
+  min-width: 288px;
   /* min-height: 432px; */
   margin: 0 auto;
   background-image: linear-gradient(
@@ -138,6 +138,15 @@ section.first div {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+section.second h3.third-heading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
 li.second-section-list-point h3.third-heading {
   text-align: left;
 }
@@ -173,7 +182,7 @@ li.second-section-list-point h3.third-heading {
   text-transform: capitalize;
   color: #2e2f42;
   height: 40px;
-  width: 218px;
+  /* width: 218px; */
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
@@ -311,7 +320,7 @@ section.heading div {
   align-content: center;
   justify-content: center;
 }
-header div {
+header div.container {
   justify-content: space-between;
   flex-direction: row;
 }
@@ -565,7 +574,8 @@ ul.social-icon-list {
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  width: 408px;
+  min-width: 288px;
+  width: 288px;
   min-height: 584px;
   background-color: white;
   visibility: hidden;
